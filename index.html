@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog Platform</h1>
+        <div class="nav">
+            <a href="login.html">Login</a>
+            <a href="#">Articles</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+    <div id="search-container">
+        <h3>Search Blogs</h3>
+        <input type="text" id="search-user" placeholder="Enter user ID or name">
+        <button onclick="searchUserBlogs()">Search</button>
+    </div>
+
+    <button class="light-dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Create a New Post</h2>
+            <input type="text" id="title" placeholder="Post Title">
+            <textarea id="content" rows="5" placeholder="Write your post here..."></textarea>
+            <input type="file" id="media" accept="image/*,video/*">
+            <button onclick="addPost()">Add Post</button>
+        </div>
+
+        <div class="posts" id="posts">
+            <!-- Posts will appear here -->
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
